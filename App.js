@@ -1,14 +1,10 @@
+  
 import React from 'react';
-import Calc from  './src/pages/Calc';
-import Brows from  './src/pages/Brows';
-import Agend from  './src/pages/Agenda';
-
+import Pages from './src/Routes' 
 
 export default function App() {
   return (
-    <Calc/>,
-    <Brows/>,
-    <Agend/>
+    <Pages />
   );
 }
 

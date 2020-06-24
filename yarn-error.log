@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-navigation
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
 
 PATH: 
   C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Users\georg\anaconda3;C:\Users\georg\anaconda3\Library\mingw-w64\bin;C:\Users\georg\anaconda3\Library\usr\bin;C:\Users\georg\anaconda3\Library\bin;C:\Users\georg\anaconda3\Scripts;C:\Users\georg\AppData\Local\Microsoft\WindowsApps;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\GitHubDesktop\bin;C:\Users\georg\AppData\Local\Yarn\bin;C:\Users\georg\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\georg\Desktop\Projeto aldo\DMOB_PROJECT\node_modules\@babel\compat-data\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\georg\Desktop\Projeto aldo\DMOB_PROJECT\node_modules\@react-native-community\cli\node_modules\pretty-format\node_modules\ansi-regex'
 
 npm manifest: 
   {
@@ -27,13 +27,24 @@ npm manifest:
       "eject": "expo eject"
     },
     "dependencies": {
+      "@react-navigation/drawer": "^5.8.2",
+      "@react-navigation/native": "^5.5.1",
+      "@react-navigation/stack": "^5.5.1",
       "expo": "~37.0.3",
+      "expo-location": "~8.1.0",
+      "native-base": "^2.13.12",
       "react": "~16.9.0",
       "react-dom": "~16.9.0",
       "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
-      "react-native-gesture-handler": "~1.6.0",
+      "react-native-gesture-handler": "^1.6.1",
+      "react-native-maps": "0.26.1",
       "react-native-reanimated": "~1.7.0",
-      "react-native-web": "~0.11.7"
+      "react-native-screens": "~2.2.0",
+      "react-native-web": "~0.11.7",
+      "react-native-webview": "8.1.1",
+      "react-navigation": "^4.3.9",
+      "react-navigation-drawer": "^2.4.13",
+      "react-navigation-stack": "^2.7.0"
     },
     "devDependencies": {
       "@babel/core": "^7.8.6",
@@ -2235,6 +2246,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
     integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
   
+  escape-string-regexp@2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
+    integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
+  
   escape-string-regexp@^1.0.5:
     version "1.0.5"
     resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
@@ -2901,7 +2917,7 @@ Lockfile:
       strip-ansi "^4.0.0"
       through "^2.3.6"
   
-  invariant@^2.2.2, invariant@^2.2.4:
+  invariant@2.2.4, invariant@^2.2.2, invariant@^2.2.4:
     version "2.2.4"
     resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
     integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -4376,6 +4392,14 @@ Lockfile:
       normalize-css-color "^1.0.2"
       prop-types "^15.6.0"
       react-timer-mixin "^0.13.4"
+  
+  react-native-webview@^10.3.1:
+    version "10.3.1"
+    resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-10.3.1.tgz#04a2b17a37daf04575b3abd10b1fb29d2c154c6f"
+    integrity sha512-Ac0v4lFaJl5P/haLook+UIKMW4Ru5xg0+AdxD2oJRB2TPgdqoATziYNU0LBMjntlxDp+DVzdr3fVDuLMdox0tg==
+    dependencies:
+      escape-string-regexp "2.0.0"
+      invariant "2.2.4"
   
   "react-native@https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz":
     version "0.61.4"
