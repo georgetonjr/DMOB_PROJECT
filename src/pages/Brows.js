@@ -8,7 +8,7 @@ export default function Brows (){
     return (
       <>
       <View >
-        <TextInput  
+        <TextInput  //Text para pegar a URL do site
       value={url}
       placeholder="URL"
       onChangeText={t => seturl(t)}

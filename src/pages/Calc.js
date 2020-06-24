@@ -6,15 +6,14 @@ import Constants from 'expo-constants'
 
 
 const calc= () =>{
-  const [n1, setn1] = useState(0);
-  const [n2, setn2] = useState(0); 
-  const [res, setres] = useState(0);
+  const [n1, setn1] = useState(0);//Variavel para pega o 1ºnumero
+  const [n2, setn2] = useState(0); //Variavel para pega o 2ºnumero
+  const [res, setres] = useState(0);// variavel para atualizar o resultado
   soma = ()=>{
     setres(parseFloat(n1)+parseFloat(n2))
   }
   sub = ()=>{
     setres(n1-n2)
-    
   }
   mult = ()=>{
     setres(n1*n2)
@@ -22,7 +21,6 @@ const calc= () =>{
   div = ()=>{
     setres(n1/n2)
   }
-
   return(
     <View style={{paddingTop: Constants.statusBarHeight}}>
         <Text >Numero 01:</Text>
